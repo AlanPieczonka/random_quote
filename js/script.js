@@ -4,7 +4,7 @@ console.log("JS WORKS!");
 $(document).ready(function(){
     console.log("THE JQUERY WORKS TOO!");
 
-    var colors = [
+    var colors = [ //flat ui colors ;)
       "#1abc9c",
       "#2ecc71",
       "#3498db",
@@ -23,27 +23,17 @@ $(document).ready(function(){
       "#c0392b"
     ];
 
-
     function changeColor(){
-
-
 
       var randomnumber = Math.floor((Math.random() * 17));
       console.log(randomnumber);
-
 
       $('body').css('background-color', colors[randomnumber] );
       $('.tweet').css('background-color', colors[randomnumber]);
       $('button').css('background-color', colors[randomnumber]);
       $('button').css('border', colors[randomnumber]);
 
-
-
     };
-
-
-
-
 
 
     function getNewQuote(){
@@ -57,39 +47,29 @@ $(document).ready(function(){
           format: 'jsonp'
         },
         success: function(response){
-          console.log(response.quoteText);
-          console.log(response.quoteAuthor);
-          $(".myQuote").text(response.quoteText);
-          //$(".author").text(response.quoteAuthor);
+
           quote = response.quoteText;
+          $(".myQuote").text(quote);
+
           if(response.quoteAuthor){
             author = response.quoteAuthor;
-            $(".author").text(response.quoteAuthor);
+            $(".author").text(author);
           }
           else{
             author = "Unknown author";
-            $(".author").text("Unknown author");
+            $(".author").text(author);
 
           }
-
-
-          //$(this).attr('href', 'https://twitter.com/intent/tweet?text=' + quote);
-          $(".twitter-share-button").attr("href", "https://twitter.com/intent/tweet?text=" + quote + "-- " + author);
+          $(".twitter-share-button").attr("href", "https://twitter.com/intent/tweet?text=" + quote + "-- " + author); //TWITTER
         }
       });
-
-      //tweetQuote(response.quoteText, response.quoteAuthor);
     }
 
     getNewQuote();
 
-
-  $(".yo").on('click', function() {
+  $(".newquote").on('click', function() {
     getNewQuote();
     changeColor();
   });
-
-
-
 
 });
