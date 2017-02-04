@@ -1,0 +1,73 @@
+body
+{
+  padding: 30px;
+  background-color: #FF6666;
+}
+.center-div
+{
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+  height: 400px;
+  background-color: #fff; /*Need to create a random function that changes background*/
+  border-radius: 3px;
+  <--!test!-->
+}
+
+.myquote{
+    display: block;
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.author{
+    display: block;
+    position: absolute;
+
+    bottom: 100px;
+    right: 20px;
+}
+
+/*Twitter*/
+
+
+.tweet{
+    position:absolute;
+    bottom: 30px;
+    left: 45px;
+    min-width: 75px;
+    min-height: 75px;
+    background-color: #FF6666;
+    border-radius: 5%;
+}
+
+.ptaszek{
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 65px;
+    bottom: 6px;
+    left: 8px;
+}
+
+/*Need to create a random function that changes background*/
+/*.randomowy-background{
+    background-color: randomowy-background;
+}*/
+
+/*New quote button*/
+
+.mybutton{
+    position:absolute;
+    bottom: 30px;
+    right: 30px;
+    max-width: 300px;
+}
+
+
+button{
+    min-width: 175px;
+    min-height: 75px;
+}
