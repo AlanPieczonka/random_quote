@@ -17,17 +17,23 @@ body
 .myquote{
     display: block;
     position: absolute;
-    left: 10px;
-    font-size: 18px;
+    max-width: 750px;
+    top: 50px;
+    left: 35px;
+    font-size: 36px;
     font-style: italic;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Amatic SC', cursive;
+
 }
 
 .author{
     display: block;
     position: absolute;
-
-    bottom: 100px;
-    right: 20px;
+    bottom: 135px;
+    right: 40px;
+    font-family: 'Acme', sans-serif;
+    font-size: 29px;
 }
 
 /*Twitter*/

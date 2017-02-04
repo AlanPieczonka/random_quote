@@ -18,11 +18,24 @@ $(document).ready(function(){
           console.log(response.quoteAuthor);
           $(".myQuote").text(response.quoteText);
           $(".author").text(response.quoteAuthor);
-        }
 
+
+        }
       });
+
+      //tweetQuote(response.quoteText, response.quoteAuthor);
     }
 
-
     getNewQuote();
+
+    $( "button" ).click(function() {
+  getNewQuote();;
+});
+
+
+    function tweetQuote(quoteText, quoteAuthor){
+      $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + quoteText);
+
+    };
+
 });
