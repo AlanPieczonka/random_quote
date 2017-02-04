@@ -3,8 +3,8 @@ body
   padding: 30px;
   background-color: #FF6666;
   transition: background 0.5s linear;
-    -webkit-transition: background 0.5s linear;
-    -moz-transition: background 0.5s linear;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
 }
 .center-div
 {
@@ -12,28 +12,26 @@ body
   margin: 0 auto;
   max-width: 900px;
   height: 400px;
-  background-color: #fff; /*Need to create a random function that changes background*/
+  background-color: #fff; /*Random change*/
   border-radius: 3px;
-  <--!tesst!-->
 }
 
 .myquote{
     display: block;
     position: absolute;
     max-width: 750px;
+    max-width: 1000px;
     top: 50px;
     left: 35px;
-    font-size: 36px;
+    font-size: 38px;
     font-style: italic;
-    font-family: 'Rubik', sans-serif;
     font-family: 'Amatic SC', cursive;
-
 }
 
 .author{
     display: block;
     position: absolute;
-    bottom: 135px;
+    top: 220px;
     right: 40px;
     font-family: 'Acme', sans-serif;
     font-size: 29px;
@@ -64,10 +62,6 @@ body
     left: 8px;
 }
 
-/*Need to create a random function that changes background*/
-/*.randomowy-background{
-    background-color: randomowy-background;
-}*/
 
 /*New quote button*/
 
@@ -80,6 +74,20 @@ body
 
 
 button{
-    min-width: 175px;
-    min-height: 75px;
+  min-width: 175px;
+  min-height: 75px;
+  display: inline-block;
+	color: white;
+	background-color: #FF6666;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 0.1111111px solid  #FF6666;
+	border-bottom-width: 0.1111111px;
+  transition: background 0.5s linear;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
 }

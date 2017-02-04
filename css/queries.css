@@ -1,2 +1,28 @@
 
+@media only screen and (max-width: 1200px) {
+  .myquote{
+        max-width: 800px;
+  }
+}
 
+@media only screen and (max-width: 1044px){
+  .myquote{
+        max-width: 800px;
+  }
+
+}
+
+@media only screen and (max-width: 767px){
+  .myquote{
+    font-size: 30px;
+    right: 20px;
+  }
+
+}
+@media only screen and (max-width: 550px){
+  .myquote{
+    font-size: 30px;
+    right: 20px;
+  }
+
+}

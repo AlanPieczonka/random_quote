@@ -1,3 +1,4 @@
+// I know this project is very similiar to Freecodecamp example, but I really liked it and wanted to give it exactly the same look. This app was much easier than the weather app.
 console.log("JS WORKS!");
 
 $(document).ready(function(){
@@ -24,10 +25,20 @@ $(document).ready(function(){
 
 
     function changeColor(){
+
+
+
       var randomnumber = Math.floor((Math.random() * 17));
       console.log(randomnumber);
+
+
       $('body').css('background-color', colors[randomnumber] );
       $('.tweet').css('background-color', colors[randomnumber]);
+      $('button').css('background-color', colors[randomnumber]);
+      $('button').css('border', colors[randomnumber]);
+
+
+
     };
 
 
